@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0c0f0c">
+  <title>RavenLab Print</title>
+  <meta name="description" content="RavenLab Print — business cards, loyalty cards and custom stickers in Iraq.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="#home" aria-label="RavenLab Print">
+        <span class="brand-mark">R</span>
+        <span class="brand-text">RavenLab <b>Print</b></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#products" data-i18n="nav_products">المنتجات</a>
+        <a href="#wholesale" data-i18n="nav_wholesale">الجملة</a>
+        <a href="#how" data-i18n="nav_how">آلية الطلب</a>
+        <a href="#faq" data-i18n="nav_faq">الأسئلة</a>
+      </nav>
+
+      <div class="nav-tools">
+        <div class="lang-switch" aria-label="Language">
+          <button class="lang-btn active" data-lang="ar">عربي</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ku">کوردی</button>
+        </div>
+        <button class="icon-btn cart-btn" id="cartBtn" type="button" aria-label="Cart">
+          <span>🛒</span>
+          <b id="cartCount">0</b>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow hero-glow-a"></div>
+      <div class="hero-glow hero-glow-b"></div>
+
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" data-i18n="hero_eyebrow">طباعة احترافية للمشاريع</span>
+          <h1 data-i18n="hero_title">مطبوعات مخصصة<br><span>لهوية مشروعك</span></h1>
+          <p data-i18n="hero_text">كروت بزنس، كروت ولاء، ستيكرات والمزيد — بجودة مرتبة وتسعير مناسب للكميات.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products" data-i18n="hero_shop">استعرض المنتجات</a>
+            <button class="btn ghost" id="customOrderBtn" type="button" data-i18n="hero_custom">طلب خاص</button>
+          </div>
+          <div class="hero-points">
+            <span data-i18n="point_1">● أسعار جملة</span>
+            <span data-i18n="point_2">● تخصيص كامل</span>
+            <span data-i18n="point_3">● تجهيز داخل العراق</span>
+          </div>
+        </div>
+
+        <div class="hero-showcase">
+          <img src="assets/business-card.png" alt="RavenLab business card mockup">
+          <div class="hero-float hero-float-one">IQD</div>
+          <div class="hero-float hero-float-two">RavenLab</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-i18n="products_eyebrow">منتجات RavenLab Print</span>
+            <h2 data-i18n="products_title">اختر المنتج وخصصه</h2>
+          </div>
+          <p data-i18n="products_text">اضغط على أي منتج لفتح نافذة المقاسات، الخامة، الكمية والتفاصيل.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-product="business">
+            <div class="product-image">
+              <img src="assets/business-card.png" alt="Business Cards">
+            </div>
+            <div class="product-info">
+              <div>
+                <h3 data-i18n="business_name">كروت بزنس</h3>
+                <p data-i18n="business_desc">كروت أعمال مخصصة للبراندات والمشاريع.</p>
+              </div>
+              <button class="round-arrow" type="button" aria-label="Open product">←</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="loyalty">
+            <div class="product-image">
+              <img src="assets/loyalty-card.png" alt="Loyalty Cards">
+            </div>
+            <div class="product-info">
+              <div>
+                <h3 data-i18n="loyalty_name">كروت ولاء</h3>
+                <p data-i18n="loyalty_desc">كروت ولاء باسم وشعار مشروعك.</p>
+              </div>
+              <button class="round-arrow" type="button" aria-label="Open product">←</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="circle">
+            <div class="product-image">
+              <img src="assets/circular-stickers.png" alt="Circular Stickers">
+            </div>
+            <div class="product-info">
+              <div>
+                <h3 data-i18n="circle_name">ستيكرات دائرية</h3>
+                <p data-i18n="circle_desc">ملصقات دائرية جاهزة أو بتصميمك الخاص.</p>
+              </div>
+              <button class="round-arrow" type="button" aria-label="Open product">←</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="random">
+            <div class="product-image">
+              <img src="assets/random-stickers.png" alt="Random Stickers">
+            </div>
+            <div class="product-info">
+              <div>
+                <h3 data-i18n="random_name">ستيكرات عشوائية</h3>
+                <p data-i18n="random_desc">باكدجات ستيكرات متنوعة أو ثيم مخصص.</p>
+              </div>
+              <button class="round-arrow" type="button" aria-label="Open product">←</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wholesale-section" id="wholesale">
+      <div class="shell wholesale-box">
+        <div>
+          <span class="eyebrow" data-i18n="wholesale_eyebrow">Wholesale First</span>
+          <h2 data-i18n="wholesale_title">كلما زادت الكمية، صار السعر أفضل.</h2>
+          <p data-i18n="wholesale_text">الموقع مصمم أساسًا لطلبات المشاريع والجملة. الأسعار النهائية تعتمد على المنتج، الخامة، المقاس والكمية.</p>
+        </div>
+        <div class="quantity-preview">
+          <div><b>50</b><span data-i18n="qty_trial">تجريبي</span></div>
+          <div><b>100</b><span data-i18n="qty_light">جملة خفيفة</span></div>
+          <div><b>200</b><span data-i18n="qty_business">للمشاريع</span></div>
+          <div class="best"><b>500+</b><span data-i18n="qty_best">أفضل قيمة</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="shell">
+        <div class="section-head compact">
+          <div>
+            <span class="eyebrow" data-i18n="how_eyebrow">آلية الطلب</span>
+            <h2 data-i18n="how_title">أربع خطوات فقط</h2>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="step"><span>01</span><h3 data-i18n="step1_title">اختر المنتج</h3><p data-i18n="step1_text">حدد نوع الطباعة المناسب لك.</p></div>
+          <div class="step"><span>02</span><h3 data-i18n="step2_title">خصص الطلب</h3><p data-i18n="step2_text">اختر المقاس والخامة والكمية.</p></div>
+          <div class="step"><span>03</span><h3 data-i18n="step3_title">راجع التفاصيل</h3><p data-i18n="step3_text">نثبت السعر والتصميم قبل التنفيذ.</p></div>
+          <div class="step"><span>04</span><h3 data-i18n="step4_title">نطبع ونجهز</h3><p data-i18n="step4_text">يتم تجهيز الطلب للشحن داخل العراق.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="shell">
+        <div class="section-head compact">
+          <div>
+            <span class="eyebrow">FAQ</span>
+            <h2 data-i18n="faq_title">أسئلة سريعة</h2>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary data-i18n="faq1_q">هل الأسعار بالدينار العراقي؟</summary>
+            <p data-i18n="faq1_a">نعم، جميع الأسعار داخل الموقع بالدينار العراقي فقط.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq2_q">هل أقدر أرسل تصميمي الخاص؟</summary>
+            <p data-i18n="faq2_a">نعم. الستيكرات والكروت يمكن تنفيذها حسب ملفك أو هوية مشروعك.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq3_q">هل الأسعار نهائية؟</summary>
+            <p data-i18n="faq3_a">السعر الظاهر تقديري للباقات المحددة. يتم تثبيت السعر النهائي بعد مراجعة الملف والمواصفات.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div>
+        <div class="brand footer-brand"><span class="brand-mark">R</span><span class="brand-text">RavenLab Print</span></div>
+        <p data-i18n="footer_text">طباعة ورقية للمشاريع والبراندات داخل العراق.</p>
+      </div>
+      <div class="footer-mini">RavenLab — Design & Manufacturing Studio</div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <section class="product-modal" id="productModal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" type="button">×</button>
+
+    <div class="modal-media">
+      <img id="modalImage" src="" alt="">
+      <div class="thumb-strip">
+        <button class="thumb active" type="button"><img id="modalThumb" src="" alt=""></button>
+      </div>
+    </div>
+
+    <div class="modal-config">
+      <div class="breadcrumb" id="modalBreadcrumb">RavenLab / Print</div>
+      <span class="eyebrow" data-i18n="custom_print">Custom Print</span>
+      <h2 id="modalTitle">—</h2>
+      <p id="modalDescription">—</p>
+
+      <div class="config-group sticker-only" id="orderTypeGroup">
+        <h4 data-i18n="type_label">نوع الطلب</h4>
+        <div class="option-grid two">
+          <button class="option active" type="button" data-order-type="ready" data-i18n="ready_designs">تصاميم جاهزة</button>
+          <button class="option" type="button" data-order-type="custom" data-i18n="custom_design">طلب خاص</button>
+        </div>
+      </div>
+
+      <div class="config-group">
+        <h4 data-i18n="size_label">المقاس</h4>
+        <div class="option-grid" id="sizeOptions"></div>
+      </div>
+
+      <div class="config-group">
+        <h4 data-i18n="material_label">الخامة</h4>
+        <div class="option-grid" id="materialOptions"></div>
+      </div>
+
+      <div class="config-group">
+        <h4 data-i18n="finish_label">التشطيب</h4>
+        <div class="option-grid two" id="finishOptions"></div>
+      </div>
+
+      <div class="config-group">
+        <h4 data-i18n="quantity_label">الكمية</h4>
+        <div class="quantity-grid" id="quantityOptions"></div>
+        <div class="custom-qty-wrap">
+          <input id="customQuantity" type="number" min="1" placeholder="Custom quantity">
+          <button type="button" class="small-apply" id="applyCustomQty" data-i18n="apply">تطبيق</button>
+        </div>
+      </div>
+
+      <div class="price-box">
+        <div>
+          <span data-i18n="estimated_total">الإجمالي التقديري</span>
+          <b id="modalPrice">—</b>
+        </div>
+        <small data-i18n="price_note">يتم تثبيت السعر النهائي بعد مراجعة الملف.</small>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn primary wide" id="addToCartBtn" type="button" data-i18n="add_to_cart">إضافة للطلب</button>
+        <button class="btn ghost wide" id="whatsappNowBtn" type="button" data-i18n="whatsapp_now">إرسال مباشرة على واتساب</button>
+      </div>
+    </div>
+  </section>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <h3 data-i18n="cart_title">طلبك</h3>
+      <button class="icon-btn" id="cartClose" type="button">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty" data-i18n="cart_empty">ماكو منتجات مضافة بعد.</div>
+    <div class="cart-footer">
+      <div class="cart-total"><span data-i18n="cart_total">الإجمالي التقديري</span><b id="cartTotal">0 د.ع</b></div>
+      <button class="btn primary wide" id="sendCartWhatsapp" type="button" data-i18n="send_whatsapp">إرسال الطلب واتساب</button>
+    </div>
+  </aside>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
